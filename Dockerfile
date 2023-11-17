@@ -1,8 +1,8 @@
 # First stage: build the Angular project
-FROM node:16-alpine AS build
+FROM node:14-alpine AS build
 WORKDIR /app
 COPY . ./
-RUN npm install
+RUN npm install -f
 RUN npm run build
 
 # Second stage: serve the static files with Nginx
