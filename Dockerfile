@@ -7,4 +7,4 @@ RUN npm run build
 
 # Second stage: serve the static files with Nginx
 FROM nginx:alpine
-COPY --from=build /app/dist/summer-workshop-angular /usr/share/nginx/html
+COPY --from=build /app/dist/crudtuto-Front /usr/share/nginx/html
