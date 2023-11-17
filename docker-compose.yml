@@ -19,7 +19,7 @@ services:
     image: fadhelkamel/fadhel:latest
     container_name: backend
     ports:
-      - "8082:8082"
+      - "8089:8089"
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/stationSki
     depends_on:
